@@ -1,0 +1,15 @@
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+deleted file mode 100644
+index 06d221aa40bf922a9e80eb7dc356e7be912c0187..0000000000000000000000000000000000000000
+diff --git a/dist/utils.js b/dist/utils.js
+index 200cf71f52561d460c24ddd26eda4e97536e334f..6caaba2ad8fecabe0d40232735e4b9060db50bb0 100644
+--- a/dist/utils.js
++++ b/dist/utils.js
+@@ -383,6 +383,7 @@ function getESLint(eslintPath, eslintOptions) {
+   } = requireModule(eslintPath, 'eslint');
+ 
+   try {
++    eslintOptions.reportUnusedDisableDirectives = null
+     return new ESLint(eslintOptions);
+   } catch (error) {
+     logger.error('There was trouble creating the ESLint CLIEngine.');

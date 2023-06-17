@@ -1,0 +1,21 @@
+{
+  "name": "admnecho",
+  "version": "0.0.0",
+  "description": "Next generation personal blog framework.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "双霖(LineSoft)",
+  "license": "MIT",
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.39.5",
+    "prettier-eslint": "^15.0.1"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "prettier-eslint@15.0.1": "patches/prettier-eslint@15.0.1.patch"
+    }
+  }
+}
